@@ -1,5 +1,5 @@
 "%&%" = function(a,b) paste(a,b,sep="")
-source("/gpfs/data/im-lab/nas40t2/hwheeler/GitHub/PredictDB_Pipeline_GTEx_v7/model_training/scripts/gtex_v7_nested_cv_elnet.R")
+source("/gpfs/data/im-lab/nas40t2/hwheeler/ancestry-px/PredictDB_Pipeline_GTEx_v7/model_training/scripts/gtex_v7_nested_cv_elnet.R")
 
 args <- commandArgs(trailingOnly=T)
 
