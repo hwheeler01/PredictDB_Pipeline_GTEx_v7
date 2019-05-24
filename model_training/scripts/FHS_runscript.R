@@ -15,5 +15,5 @@ covariates_file <- mydir %&% "covariates/FHS_2019-04-02/FHS_eur_10_gt_PCs_covari
 prefix1 <- "FHS_nested_cv"
 prefix2 <- "FHS_nested_cv_" %&% Nk %&% "PFs"
 
-#chrom in this function must be numeric
-main(snp_annot_file, gene_annot_file, genotype_file, expression_file, covariates_file, as.numeric(chrom), prefix2, null_testing=TRUE)
+#chrom in this function must be numeric, null_testing=FALSE (to run EN)
+main(snp_annot_file, gene_annot_file, genotype_file, expression_file, covariates_file, as.numeric(chrom), prefix2, null_testing=FALSE)

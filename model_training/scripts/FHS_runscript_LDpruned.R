@@ -16,6 +16,6 @@ prefix1 <- "FHS_nested_cv_LDpruned"
 prefix2 <- "FHS_nested_cv_LDpruned_" %&% Nk %&% "PFs"
 
 
-#chrom in this function must be numeric
-main(snp_annot_file, gene_annot_file, genotype_file, expression_file, covariates_file, as.numeric(chrom), prefix2, null_testing=TRUE)
+#chrom in this function must be numeric, null_testing=FALSE (to run EN)
+main(snp_annot_file, gene_annot_file, genotype_file, expression_file, covariates_file, as.numeric(chrom), prefix2, null_testing=FALSE)
 
