@@ -13,7 +13,7 @@ genotype_file <- mydir %&% "genotype/FHS_2019-05-01/chr" %&% chrom %&% "_dosage_
 expression_file <- mydir %&% "expression/FHS_2019-05-16/FHS_adjEXP_peer_Nk-" %&% Nk %&% ".txt"
 covariates_file <- mydir %&% "covariates/FHS_2019-04-02/FHS_eur_10_gt_PCs_covariates.txt"
 prefix1 <- "FHS_nested_cv_LDpruned"
-prefix2 <- "FHS_nested_cv_LDpruned_" %&% Nk %&% "PFs"
+prefix2 <- "FHS_2019-05-24_LDpruned_" %&% Nk %&% "PFs"
 
 
 #chrom in this function must be numeric, null_testing=FALSE (to run EN)
