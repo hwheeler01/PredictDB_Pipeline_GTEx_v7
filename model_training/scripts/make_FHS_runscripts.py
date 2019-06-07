@@ -14,8 +14,8 @@ for i in [10]:
         outfilename = '000_run_' + prescript + '_' + c + '_' + nk + '.sh'
         outfile = open(outfilename,'w')
         output = '''#!/bin/bash
-#PBS -N en_ld_''' + c + '_' + nk +'''\n#PBS -S /bin/bash
-#PBS -l walltime=480:00:00
+#PBS -N fen_ld_''' + c + '_' + nk +'''\n#PBS -S /bin/bash
+#PBS -l walltime=240:00:00
 #PBS -l nodes=1:ppn=1
 #PBS -l mem=32gb
 #PBS -e ../joblogs/${PBS_JOBNAME}.err
