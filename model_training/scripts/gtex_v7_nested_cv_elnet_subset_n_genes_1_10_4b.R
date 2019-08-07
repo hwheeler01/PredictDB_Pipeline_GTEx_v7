@@ -195,10 +195,14 @@ main <- function(snp_annot_file, gene_annot_file, genotype_file, expression_file
   write(covariance_col, file = covariance_file, ncol = 4, sep = ' ')
   
   # Determine quartiles (25%) of n_genes
-  quart <- quantile(1:n_genes, seq(0,1,0.25))
+#  quart <- quantile(1:n_genes, seq(0,1,0.25))
   # gene_subset variable ranges from 1:4
-  start_gene <- ceiling(quart[[gene_subset]])
-  end_gene <- floor(quart[[gene_subset+1]])
+#  start_gene <- ceiling(quart[[gene_subset]])
+#  end_gene <- floor(quart[[gene_subset+1]])
+  #chr1 subset 4 didn't finish in 240 hours, manually run the remaining 6 genes
+  start_gene <- 1763
+  end_gene <- 1768
+
   cat(start_gene, ":", end_gene, "\n")
   
   # Attempt to build model for each gene----
